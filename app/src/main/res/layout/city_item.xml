@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_centerVertical="false"
+                android:id="@+id/overallLayout">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center|center_vertical"
+            android:layout_height="70dp" android:id="@+id/cityItem"
+            android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <ImageView
+                android:layout_height="wrap_content" app:srcCompat="@drawable/photo_share_pressed"
+                android:id="@+id/imageViewIcon" android:layout_width="26dp"/>
+        <TextView
+                android:text="28°"
+                android:gravity="center|center_vertical"
+                android:id="@+id/temperatureText"
+                android:background="@drawable/textview_temperature"
+                android:layout_width="50dp" android:textAlignment="center" android:textSize="18sp"
+                android:textStyle="normal|bold" android:layout_height="50dp" android:layout_marginLeft="10dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@drawable/cusom_menu_child"
+                android:layout_height="match_parent" android:layout_marginRight="4dp" android:layout_weight="4.89">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_height="wrap_content" android:layout_width="240dp">
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/cityName"
+                        android:layout_marginLeft="20dp" android:textSize="20sp" android:textStyle="normal|bold"
+                        android:layout_marginBottom="5dp"/>
+                <TextView
+                        android:text="TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/temperatureNumber"
+                        android:layout_marginLeft="20dp" android:textSize="12sp" android:layout_marginTop="2dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent" android:layout_width="match_parent"
+            >
+                <ImageButton
+                        android:layout_gravity="center_vertical|center"
+                        android:id="@+id/deleteCity"
+                        app:srcCompat="@drawable/clearcity"
+                        android:background="@android:color/transparent"
+                        android:layout_height="40dp" android:layout_width="24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

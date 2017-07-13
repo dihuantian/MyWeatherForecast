@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.example.util.CustomMenuChild
+            android:id="@+id/cityWeatherManagement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cityManageTextSize="20"
+            app:menuChildCityManageBackgroundImage="@drawable/location_icon"
+            app:cityManageChildText="城市管理" >
+
+    </com.example.util.CustomMenuChild>
+
+
+    <com.example.util.CustomMenuChild
+            android:id="@+id/earlyWarningManagement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cityManageTextSize="20"
+            app:menuChildCityManageBackgroundImage="@drawable/moji_notice"
+            app:cityManageChildText="预警管理" >
+
+    </com.example.util.CustomMenuChild>
+
+</LinearLayout>

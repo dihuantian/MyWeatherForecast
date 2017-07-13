@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center|center_vertical"
+            android:id="@+id/menuChild"
+            android:layout_height="60dp">
+        <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:id="@+id/menuChildCityManageImage" app:srcCompat="@drawable/location_icon"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@drawable/cusom_menu_child"
+                android:layout_height="match_parent" android:layout_marginRight="10dp">
+            <TextView
+                    android:text="TextView"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/cityManageText"
+                    android:layout_weight="1"
+                    android:textSize="18sp" android:paddingLeft="10dp"/>
+            <ImageView
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/more_praise"
+                    android:id="@+id/menuChildRightImage"
+                    android:layout_width="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

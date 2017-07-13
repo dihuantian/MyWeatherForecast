@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CityItem">
+        <attr name="cityNameText" format="string" />
+        <attr name="cityTemperatureNumberText" format="string" />
+        <attr name="temperatureImageColor" format="color" />
+        <attr name="cityNameFont" format="integer" />
+        <attr name="deleteBackgroundImage" format="reference"/>
+        <attr name="cityTemperatureNumberFont" format="integer" />
+        <attr name="cityItemBackground" format="color" />
+        <attr name="imageViewIconImage" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomMenuChild">
+        <attr name="cityManageTextSize" format="integer"/>
+        <attr name="cityManageChildText" format="string"/>
+        <attr name="menuChildRightIcon" format="integer" />
+        <attr name="menuChildCityManageBackgroundImage" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomAnimationPages">
+        <attr name="cityNamePageText" format="string" />
+        <attr name="weatherTypePageText" format="string" />
+        <attr name="weatherTempPageText" format="string" />
+        <attr name="levelPageText" format="string" />
+        <attr name="windDirectionPage" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEarlyWarningItem">
+        <attr name="weebNumberItemText" format="string" />
+        <attr name="weatherImageItem" format="reference" />
+        <attr name="lowHighTempItem" format="string" />
+    </declare-styleable>
+    
+</resources>
